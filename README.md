@@ -1,4 +1,4 @@
-﻿# simple-project
+﻿# Python from basics to advance
 ﻿# DAY 1:Data Types
 									Decision Making Commands
 									Break and Pass Keywords
