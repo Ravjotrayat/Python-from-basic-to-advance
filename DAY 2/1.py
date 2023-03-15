@@ -187,10 +187,16 @@ ls=[]
  #   for j in range(i,len(array)):
   #      result.append(array[i,j+1])
 
-ls=[result[i:j+1]  for i in range(len(array)) for j in range(i,len(array))]
+ls=[array[i:j+1]  for i in range(len(array)) for j in range(i,len(array))]
 print(ls)
+c=0
+for i in ls:
+    if sum(i)%2!=0:
+        c+=1
+print(c)
+print([i  for i in ls if sum(i)%2!=0])
 
-
+print([i if sum(i)%2!=0 else sum(i)**2 for i in ls])
 
 
 
