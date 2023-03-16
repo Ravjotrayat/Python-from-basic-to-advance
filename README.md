@@ -15,4 +15,8 @@
          List,Tuples and Dictionary
          Coding Questions
          List Comprehension
-
+	 
+﻿# DAY 3:
+ 
+	List Comprehension
+	Coding Questions
