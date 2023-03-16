@@ -1,7 +1,6 @@
 #Find the largest Prime Factor
 #input=f(10)+f(11)+f(12)+f(13)+f(14)+f(15)+f(16)+f(17)+f(18)
 #output=5+11+3+13+7+5+2+17+3= 66
-
 import math
 def prime(j):
     for k in range(2,int(math.sqrt(j))+1):
