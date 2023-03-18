@@ -20,3 +20,9 @@
  
 	List Comprehension
 	Coding Questions
+
+﻿# DAY 4:
+ 
+ 	Coding Questions
+	Constructor
+	Predict the output of the constructor	
