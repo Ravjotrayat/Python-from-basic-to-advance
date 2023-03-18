@@ -39,6 +39,7 @@ class customer():
         
 c1=customer(100,"Ravjot",24,1000)
 print(c1.get_wallet_balance())
+
 c1.set_balance(5000)
 print(c1.get_wallet_balance())
 
