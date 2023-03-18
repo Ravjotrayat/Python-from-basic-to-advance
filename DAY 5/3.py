@@ -1,71 +1,122 @@
 # object of pizzaservice(calculate_pizza_cost),
 # doordelivery(calculate_pizza_cost)
+types=['small','Small','medium','Medium']
 class Customer:
-    def __init__(self,quality):
-        self.quantity=quantity
-        validate_quantity(self)
+    def __init__(self,customer_name,quantity):
+        self.__customer_name=customer_name.title()
+        self.__quantity=quantity
 
     def validate_quantity(self):
-        if self.quantity>=1 and self.quantity<=5:
+        if self.__quantity in range(1,6):
             return True
         else:
             return False
 
+    def get_customer_name(self):
+        return self.__customer_name
+    def get_quantity(self):
+        return self.__quantity
+
 class Pizzaservice:
-    def __init__(self,additional_toppings,size,door_delivery):
-        self.tt=100
-        self.additional_toppings=additional_toppings
-        self.size=size
-        self.order=None
-        self.pizza_id=None
-        self.i=101
-        self.cost=None
-        self.total=None   # total cost after adding the delivery
-        self.door_delivery=door_delivery   #in km
-        validate_pizza_type()
+    counter=100   #static by default
+    def __init__(self,customer,pizza_type,additional_topping):
+        self.__customer=customer
+        self.__pizza_type=pizza_type
+        self.__additional_topping=additional_topping
+        self.pizza_cost=0  #pizza type
+        self.__service_id=None
 
     def validate_pizza_type(self):
-        if self.size=='small' or self.size=='Small':
-            self.order='s'
-            calculate_pizza_cost()
-        elif self.size=='medium' or self.size=='Small':
-            self.order='m'
-            calculate_pizza_cost()
+        if self.__pizza_type.lower() in types:
+            return True
         else:
-            print("Invalid Size")
-            print("Pizza Cost= ",-1)
+            return False
+        
 
-    def calculate_pizza_cost(self):
-        self.pizza_id=self.order+str(self.i)
-        self.i=self.i+1
-        if self.order=='s':
-            if self.additional_toppings=True:
-                self.cost=150+35
-            else:
-                self.cost=150
+    def calculate_pizza_cost(self):    #bounded and unbounded
+        if self.validate_pizza_type() and Customer.validate_quantity(self.__customer):
+            
+            if self.__pizza_type.title()=="Small":
+                self.pizza_cost=150*Customer.get_quantity(self.__customer)
+                if self.__additional_topping:
+                    self.pizza_cost+=35*Customer.get_quantity(self.__customer)
+                    
+            if self.__pizza_type.title()=="Medium":
+                self.pizza_cost=200*Customer.get_quantity(self.__customer)
+                if self.__additional_topping:
+                    self.pizza_cost+=50*Customer.get_quantity(self.__customer)
+                    
+            if not self.__service_id:
+                self.__service_id=self.__pizza_type[0]+str(Pizzaservice.counter+1)
+                Pizzaservice.counter+=1
         else:
-            if self.additional_toppings=True:
-                self.cost=200+50
-            else:
-                self.cost=200
+            self.pizza_cost=-1
+    def get_service_id(self):
+        return self.__service_id
+    
+    def get_pizza_type(self):
+        return self.__pizza_type
+
+    def get_customer(self):
+        return self.__customer
+
+    def get_additional_topping(self):
+        return self.__additional_topping
                 
         #validate pizza type,cost, quantity #pizza_cost(att.)
         #generate => service_id(att.)starting from 100 example s101,m1
 
-class Doordelivery:
-    if self.door_delivery=>=1 and selfdoor_delivery<=10:
-        print("Delivery is possible")
-        validate_distance_in_kms()
-    else:
-        print("Delivery is not possible")
+class Doordelivery(Pizzaservice):
 
-        def validate_distance_in_kms(self):
-            if self.delivery<=5:
-                self.total= 5+ self.cost
-            elif self.delivery>5 and self.delivery<=10:
-                self.total=5+7+self.cost
+    def __init__(self,customer,pizza_type,additional_topping,distance_in_kms):
+        self.__delivery_charge=0
+        self.__distance_in_kms=distance_in_kms
+        Pizzaservice.__init__(self,customer,pizza_type,additional_topping)
+
+    
+    def validate_distance_in_kms(self):
+            if self.__distance_in_kms in range(1,11):
+                return True
             else:
-                self.total=-1
+                return False
+    def calculate_pizza_cost(self):
+        if self.validate_distance_in_kms():
+            Pizzaservice.calculate_pizza_cost(self)
+            if self.pizza_cost!=-1:
+                distance=1
+                while distance<=self.__distance_in_kms:
+                    if distance in range(1,6):
+                        self.pizza_cost+=5
+                    if distance in range(6,11):
+                        self.pizza_cost+=7
+                    distance+=1
+        else:
+            self.pizza_cost=-1
+        def get_delivery_charge(self):
+            return self.__delivery_charge
+        
+        def get_distance_in_kms(self):
+            return self.__distance_in_kms
+        
+c=Customer("Paji",5)
+p1=Pizzaservice(c,"MEDIUM",True)
+p1.calculate_pizza_cost()
+print(p1.pizza_cost)
+print(p1.get_service_id())
+
+d1=Doordelivery(c,"MEDIUM",True,6)
+d1.calculate_pizza_cost()
+print(d1.pizza_cost)
+print(d1.get_service_id())
+    
+
+
+
+
+
+
+
+            
     
         
                 
