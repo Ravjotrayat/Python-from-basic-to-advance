@@ -26,3 +26,25 @@
  	Coding Questions
 	Constructor
 	Predict the output of the constructor	
+	
+﻿# DAY 5:
+ 
+ 	CP(Constructor)
+ 
+﻿# DAY 6:
+ 
+ 	Competative Programming
+ 
+﻿# DAY 7:
+ 
+ 	Stack
+	Queue
+	Intro to LinkedList
+ 
+﻿# DAY 8:
+ 
+ 	Singly LinkedList
+	LinkedList(Insertion,deletion by index and by finding the element)
+	Practice Problems based on LinkedList
+ 
+ 
