@@ -52,7 +52,7 @@
  	Doubly LinkedList(All operations)
 	Stack(postfix to infix)
 	
-﻿# DAY 9:
+﻿# DAY 10:
  
  	Linear Search
 	Binary Search
