@@ -57,4 +57,5 @@
  	Linear Search
 	Binary Search
 	Binary Tree(Inorder,Preorder,Postorder)
+	Binary Search Tree
  
