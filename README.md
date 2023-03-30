@@ -51,4 +51,10 @@
  
  	Doubly LinkedList(All operations)
 	Stack(postfix to infix)
+	
+﻿# DAY 9:
+ 
+ 	Linear Search
+	Binary Search
+	Binary Tree(Inorder,Preorder,Postorder)
  
