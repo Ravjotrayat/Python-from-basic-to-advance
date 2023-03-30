@@ -1,7 +1,6 @@
 #inorder=Left Root Right
 #preorder= Root Left Right
 #postorder=Left Right Root
-
 class Node:
     def __init__(self,item):
         self.left=None
@@ -14,13 +13,11 @@ def inorder(root):
             inorder(root.left)
             print(str(root.val)+"->",end='')
             inorder(root.right)
-
 def preorder(root):
         if root :
             print(str(root.val)+"->",end='')
             preorder(root.left)
             preorder(root.right)
-
 def postorder(root):
         if root:
             postorder(root.left)
@@ -35,11 +32,9 @@ root.left.right=Node(5)
 print("Inorder traversal")
 inorder(root)
 print()
-
 print("\nPreorder traversal")
 preorder(root)
 print()
-
 print("\nPostorder traversal")
 postorder(root)
 
