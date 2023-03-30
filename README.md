@@ -46,5 +46,9 @@
  	Singly LinkedList
 	LinkedList(Insertion,deletion by index and by finding the element)
 	Practice Problems based on LinkedList
+	
+﻿# DAY 9:
  
+ 	Doubly LinkedList(All operations)
+	Stack(postfix to infix)
  
