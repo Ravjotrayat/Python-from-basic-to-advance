@@ -58,4 +58,22 @@
 	Binary Search
 	Binary Tree(Inorder,Preorder,Postorder)
 	Binary Search Tree
+	
+﻿# DAY 11:
+ 	
+	Queue:
+		Queue_even_odd
+	LinkedList:
+		Merge LinkedList at certain position
+		Replace Largest with another number in LinkedList
+ 
+﻿# DAY 12:
+ 
+ 	Sorting:
+		Quick Sort
+		Selection Sort
+	LinkedList:
+		Baker House
+		Chocolates Reward
+		Flight Ticket 
  
