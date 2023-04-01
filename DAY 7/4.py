@@ -1,3 +1,11 @@
+'''
+Merge the 2 List.1st from starting and 2nd list from ending forming a word.
+Input:
+l1=['A','app','a','d','ke','th','doc','awa']
+l2=['y','tor','e','eps','ay',None,'le','n']
+
+Output : An apple a day keeps the doctor away
+'''
 l1=['A','app','a','d','ke','th','doc','awa']
 l2=['y','tor','e','eps','ay',None,'le','n']
 s=""

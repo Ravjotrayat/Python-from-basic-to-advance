@@ -1,3 +1,22 @@
+'''
+Merging 2 list by taking elements from alternate lists.
+list1=[3,6,8]
+list2=['b','y','u','t','r','o']
+
+output:
+3
+b
+6
+y
+8
+u
+t
+r
+o
+
+
+'''
+
 class Queue:
     def __init__(self,size):
         self.__size=size

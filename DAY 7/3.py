@@ -1,3 +1,9 @@
+'''
+Given a Queue of whole number.Write a Python function to return a new queue which contains the evenly divisible numbers.
+Evenly Divisible means divisible from 1 to 10,all the numbers.
+input=13983,10080,7113,2520,2500(front,rear)
+output=10080,2520(front,rear)
+'''
 class Evenly:
     def __init__(self,start,stop,size):
         self.__start=start
