@@ -19,13 +19,19 @@ def insert(node,key):
         node.right=insert(node.right,key)
     return node
 
-def deleteNode(node,key)::
+def minValueNode(node):
+    current=node
+    while current.left is not None:
+        current=current.left
+    return current
+
+def deleteNode(root,key):
     if root is None:
         return root
     if key<root.key:
-        root.left=deleteNode(node.left,key)
+        root.left=deleteNode(root.left,key)
     elif key>root.key:
-        root.right=deleteNode(node.left,key)
+        root.right=deleteNode(root.right,key)
     else:
         if root.left is None:
             temp=root.right
@@ -35,9 +41,10 @@ def deleteNode(node,key)::
             temp=root.left
             root=None
             return temp
-
-        
-
+        temp=minValueNode(root.right)
+        root.key=temp.key
+        root.right=deleteNode(root.right,temp.key)
+    return root
 root=None
 root=insert(root,8)
 root=insert(root,3)
@@ -45,14 +52,14 @@ root=insert(root,1)
 root=insert(root,6)
 root=insert(root,7)
 root=insert(root,10)
-root=insert(root,14)
 root=insert(root,4)
-            
+root=insert(root,11)   
 inorder(root)
 print()
-
 print("\nDelete 10")
 root=deleteNode(root,10)
-
 inorder(root)
+root=deleteNode(root,3)
 print()
+inorder(root)
+

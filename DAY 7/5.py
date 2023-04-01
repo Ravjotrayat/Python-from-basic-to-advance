@@ -54,17 +54,12 @@ def merge(s,s2):
     elif b>a:
         for i in range(a,b):
             s3.enqueue(s2.dequeue())
-
     return s3
-    
-
 s=Queue(3)
-
 s.enqueue(3)
 s.enqueue(6)
 s.enqueue(8)
 #print(s.get_max_size())
-
 s2=Queue(6)
 s2.enqueue('b')
 s2.enqueue('y')
@@ -75,4 +70,3 @@ s2.enqueue('o')
 #print(s2.get_max_size())
 s3=merge(s,s2) #function call
 s3.display()
-
