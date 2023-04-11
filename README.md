@@ -77,3 +77,10 @@
 		Chocolates Reward
 		Flight Ticket 
  
+﻿# DAY 13:
+ 
+ 	Calculation of Time Complexity
+ 
+﻿# DAY 14:
+ 
+ 	Output Questions
