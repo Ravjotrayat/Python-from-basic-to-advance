@@ -84,3 +84,10 @@
 ﻿# DAY 14:
  
  	Output Questions
+	
+﻿# DAY 15:
+ 	Graph
+	Krushal Graph
+	Prims Algorithm Graph
+	Circle in LinkedList
+ 	
