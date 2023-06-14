@@ -1,7 +1,7 @@
 
 ﻿# Python from basics to advance
  
-﻿# DAY 1:
+﻿# Day 1:
  
          Data Types
          Decision Making Commands
@@ -10,56 +10,56 @@
          Types of Functions(Positional,Keywords,Default,Pointer)
          Coding Questions
 				 
-﻿# DAY 2:
+﻿# Day 2:
  
          List,Tuples and Dictionary
          Coding Questions
          List Comprehension
 	 
-﻿# DAY 3:
+﻿# Day 3:
  
 	List Comprehension
 	Coding Questions
 
-﻿# DAY 4:
+﻿# Day 4:
  
  	Coding Questions
 	Constructor
 	Predict the output of the constructor	
 	
-﻿# DAY 5:
+﻿# Day 5:
  
  	CP(Constructor)
  
-﻿# DAY 6:
+﻿# Day 6:
  
  	Competative Programming
  
-﻿# DAY 7:
+﻿# Day 7:
  
  	Stack
 	Queue
 	Intro to LinkedList
  
-﻿# DAY 8:
+﻿# Day 8:
  
  	Singly LinkedList
 	LinkedList(Insertion,deletion by index and by finding the element)
 	Practice Problems based on LinkedList
 	
-﻿# DAY 9:
+﻿# Day 9:
  
  	Doubly LinkedList(All operations)
 	Stack(postfix to infix)
 	
-﻿# DAY 10:
+﻿# Day 10:
  
  	Linear Search
 	Binary Search
 	Binary Tree(Inorder,Preorder,Postorder)
 	Binary Search Tree
 	
-﻿# DAY 11:
+﻿# Day 11:
  	
 	Queue:
 		Queue_even_odd
@@ -67,8 +67,8 @@
 		Merge LinkedList at certain position
 		Replace Largest with another number in LinkedList
  
-﻿# DAY 12:
- 
+﻿# Day 12:
+
  	Sorting:
 		Quick Sort
 		Selection Sort
@@ -77,25 +77,24 @@
 		Chocolates Reward
 		Flight Ticket 
  
-﻿# DAY 13:
+﻿# Day 13:
  
  	Calculation of Time Complexity
  
-﻿# DAY 14:
+﻿# Day 14:
  
  	Output Questions
 	
-﻿# DAY 15:
+﻿# Day 15:
  
  	Graph
 	Krushal Graph
 	Prims Algorithm Graph
 	Circle in LinkedList
-
-# DAY 16:
-
-	Djiktras Algorithm
+ 
+﻿# Day 16:
+ 
+ 	Djiktras Algorithm
 	2 Stack in 1 array
  	Find the Profit
 	Seperate positive and Negative numbers 
- 
