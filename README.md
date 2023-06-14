@@ -91,4 +91,11 @@
 	Krushal Graph
 	Prims Algorithm Graph
 	Circle in LinkedList
- 	
+
+# DAY 16:
+
+	Djiktras Algorithm
+	2 Stack in 1 array
+ 	Find the Profit
+	Seperate positive and Negative numbers 
+ 
