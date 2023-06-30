@@ -93,8 +93,13 @@
 	Circle in LinkedList
  
 ﻿# Day 16:
- 
+
  	Djiktras Algorithm
 	2 Stack in 1 array
  	Find the Profit
-	Seperate positive and Negative numbers 
+	Seperate positive and Negative numbers
+
+﻿# Day 17:
+
+ 	Bellman Ford Algorithm
+  	Traveling Salesman Problem (TSP)
